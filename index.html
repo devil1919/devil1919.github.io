@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web based Intelligent Agriculture System</title>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<div>
+    <h1 class="header">
+        Web Based Intelligent Agriculture System
+    </h1>
+    <header>Hello Farmer</header>
+    <div class="left-content">
+        Home
+    </div>
+    <div class="main-content">
+        <table>
+            <tr>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Pressure</th>
+                <th>Moisture</th>
+                <th>Water Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <span>Cotton</span>
+        <br>
+        <button>Predict Crop</button>
+    </div>
+</div>
+<div class="footer">
+    Happy Farming
+</div>
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCMDNDPw8j9YrT9G_gKSS7KjSya9t5hPRo",
+        authDomain: "web-app-d0975.firebaseapp.com",
+        databaseURL: "https://web-app-d0975.firebaseio.com",
+        projectId: "web-app-d0975",
+        storageBucket: "web-app-d0975.appspot.com",
+        messagingSenderId: "334198901541",
+        appId: "1:334198901541:web:fae105d26094c759fd28cc",
+        measurementId: "G-BZPNCJ8GEX"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var database = firebase.database();
+</script>
+<script src="ind.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</body>
+</html>
